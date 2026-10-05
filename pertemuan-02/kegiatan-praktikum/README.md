@@ -2,28 +2,27 @@
 
 ## Judul
 
-Pengujian HTTP Method menggunakan Postman dan HTTPBin
+Pengujian HTTP Method dan HTTP Status Code menggunakan Postman dan HTTPBin
 
 ## Tujuan
 
-Melakukan pengujian HTTP Method menggunakan Postman untuk memahami proses request dan response pada komunikasi HTTP.
+Melakukan pengujian HTTP Method dan HTTP Status Code menggunakan Postman untuk memahami proses request dan response pada komunikasi HTTP.
 
-Pengujian dilakukan menggunakan HTTPBin sebagai layanan untuk melihat data request yang dikirim oleh client.
+Pengujian dilakukan menggunakan HTTPBin sebagai layanan untuk melihat data request yang dikirim oleh client serta memahami status code yang diberikan oleh server.
 
 ## Cara Menjalankan
 
 Pengujian dilakukan menggunakan aplikasi Postman dengan langkah-langkah berikut:
 
 1. Membuka aplikasi Postman.
-2. Membuat request HTTP sesuai method yang diuji.
+2. Membuat request HTTP sesuai dengan pengujian yang dilakukan.
 3. Memasukkan URL HTTPBin.
-4. Mengirim request menggunakan tombol **Send**.
-5. Mengamati status code dan response yang diberikan oleh server.
-6. Menyimpan screenshot hasil pengujian sebagai bukti pengerjaan.
+4. Mengatur method dan parameter sesuai kebutuhan pengujian.
+5. Mengirim request menggunakan tombol **Send**.
+6. Mengamati status code dan response yang diberikan oleh server.
+7. Menyimpan screenshot hasil pengujian sebagai bukti pengerjaan.
 
 ## Hasil
-
-Pengujian HTTP Method berhasil dilakukan menggunakan Postman.
 
 ### 1. Pengujian GET
 
@@ -41,19 +40,51 @@ Request POST berhasil dikirim ke HTTPBin dan menghasilkan response dari server.
 
 [![Hasil Pengujian POST](./tm1_fungsi_post.png)](./tm1_fungsi_post.png)
 
+### 3. Pengujian HTTP Status Code
+
+Pengujian HTTP Status Code dilakukan menggunakan endpoint:
+
+`https://httpbin.org/status/:code`
+
+Method yang digunakan adalah **GET**.
+
+Pengujian dilakukan dengan beberapa status code untuk melihat response yang diberikan oleh server.
+
+#### Status Code 200
+
+[![Hasil Pengujian Status Code 200](./tm_2_200.png)](./tm_2_200.png)
+
+#### Status Code 201
+
+[![Hasil Pengujian Status Code 201](./tm_2_201.png)](./tm_2_201.png)
+
+#### Status Code 400
+
+[![Hasil Pengujian Status Code 400](./tm_2_400.png)](./tm_2_400.png)
+
 ## Lokasi Bukti
 
 Bukti screenshot hasil pengujian disimpan pada folder:
 
 `pertemuan-02/kegiatan-praktikum/`
 
-File bukti:
+### Bukti TM-1
 
 - [tm1_fungsi_get.png](./tm1_fungsi_get.png)
 - [tm1_fungsi_post.png](./tm1_fungsi_post.png)
 
+### Bukti TM-2
+
+- [tm_2_200.png](./tm_2_200.png)
+- [tm_2_201.png](./tm_2_201.png)
+- [tm_2_400.png](./tm_2_400.png)
+
 ## Laporan Tugas
 
-Laporan lengkap Tugas Mandiri 1 dapat dilihat pada:
+### TM-1 — HTTP Method
 
 [`tugas-mandiri-1-http-method.md`](../tugas-mandiri/backend/tugas-mandiri-1-http-method.md)
+
+### TM-2 — HTTP Status Code
+
+[`tugas-mandiri-2-status-code.md`](../tugas-mandiri/backend/tugas-mandiri-2-status-code.md)
