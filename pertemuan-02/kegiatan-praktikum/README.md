@@ -2,13 +2,13 @@
 
 ## Judul
 
-Pengujian HTTP Method dan HTTP Status Code menggunakan Postman dan HTTPBin
+Pengujian HTTP Method, HTTP Status Code, serta Request & Response menggunakan Postman dan HTTPBin
 
 ## Tujuan
 
-Melakukan pengujian HTTP Method dan HTTP Status Code menggunakan Postman untuk memahami proses request dan response pada komunikasi HTTP.
+Melakukan pengujian HTTP Method, HTTP Status Code, serta Request & Response (termasuk Headers) menggunakan Postman untuk memahami proses komunikasi HTTP antara client dan server.
 
-Pengujian dilakukan menggunakan HTTPBin sebagai layanan untuk melihat data request yang dikirim oleh client serta memahami status code yang diberikan oleh server.
+Pengujian dilakukan menggunakan HTTPBin sebagai layanan untuk melihat data request yang dikirim oleh client serta memahami status code dan response yang diberikan oleh server.
 
 ## Cara Menjalankan
 
@@ -17,7 +17,7 @@ Pengujian dilakukan menggunakan aplikasi Postman dengan langkah-langkah berikut:
 1. Membuka aplikasi Postman.
 2. Membuat request HTTP sesuai dengan pengujian yang dilakukan.
 3. Memasukkan URL HTTPBin.
-4. Mengatur method dan parameter sesuai kebutuhan pengujian.
+4. Mengatur method, headers, dan parameter sesuai kebutuhan pengujian.
 5. Mengirim request menggunakan tombol **Send**.
 6. Mengamati status code dan response yang diberikan oleh server.
 7. Menyimpan screenshot hasil pengujian sebagai bukti pengerjaan.
@@ -62,6 +62,18 @@ Pengujian dilakukan dengan beberapa status code untuk melihat response yang dibe
 
 [![Hasil Pengujian Status Code 400](./tm_2_400.png)](./tm_2_400.png)
 
+### 4. Pengujian Request & Response (TM-3)
+
+Pengujian Request dan Response mencakup pengujian fungsi GET serta pengiriman kustom HTTP Headers ke HTTPBin.
+
+#### Pengujian Fungsi GET TM-3
+
+[![Hasil Pengujian TM-3 Fungsi GET](./tm_3_fungsi_get.png)](./tm_3_fungsi_get.png)
+
+#### Pengujian Headers TM-3
+
+[![Hasil Pengujian TM-3 Headers](./tm_3_fungsi_headers.png)](./tm_3_fungsi_headers.png)
+
 ## Lokasi Bukti
 
 Bukti screenshot hasil pengujian disimpan pada folder:
@@ -79,6 +91,11 @@ Bukti screenshot hasil pengujian disimpan pada folder:
 - [tm_2_201.png](./tm_2_201.png)
 - [tm_2_400.png](./tm_2_400.png)
 
+### Bukti TM-3
+
+- [tm_3_fungsi_get.png](./tm_3_fungsi_get.png)
+- [tm_3_fungsi_headers.png](./tm_3_fungsi_headers.png)
+
 ## Laporan Tugas
 
 ### TM-1 — HTTP Method
@@ -88,3 +105,7 @@ Bukti screenshot hasil pengujian disimpan pada folder:
 ### TM-2 — HTTP Status Code
 
 [`tugas-mandiri-2-status-code.md`](../tugas-mandiri/backend/tugas-mandiri-2-status-code.md)
+
+### TM-3 — Request & Response
+
+[`tugas-mandiri-3-request-response.md`](../tugas-mandiri/backend/tugas-mandiri-3-request-response.md)
